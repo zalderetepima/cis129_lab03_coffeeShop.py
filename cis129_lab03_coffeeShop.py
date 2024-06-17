@@ -1,5 +1,5 @@
 # CIS 129 Lab 3 Coffee Shop Simulator
-# This program calculates the total cost of an order per customer input
+# This program calculates the total cost of an order per customer input based on item and quantity requested
 # Zach Alderete
 # 6/16/2024
 # Add two more items to menu
@@ -12,7 +12,7 @@ tea_price = 7.00
 pie_price = 9.00
 tax_rate = 0.06
 
-# Get the number of items requested from user and convert to integer for calculations
+# Start receipt and get the number of items requested from user and convert to integer for calculations
 print("***************************************")
 print("My Coffee and Muffin Shop")
 num_coffees = int(input("Number of coffees bought? "))
@@ -30,7 +30,7 @@ subtotal = subtotal_coffee + subtotal_muffin + subtotal_teas + subtotal_pies
 tax = subtotal * tax_rate
 total = subtotal + tax
 
-# Print the receipt
+# Print the remaining receipt
 print()
 print("***************************************")
 print("My Coffee and Muffin Shop Receipt")
